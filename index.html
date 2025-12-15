@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romar | Maquinaria y Servicio 24/7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="logo-text">
+        <div class="logo-circle">
+          <span class="circle circle--outer"></span>
+          <span class="circle circle--middle"></span>
+          <span class="circle circle--inner"></span>
+        </div>
+        <div>
+          <p class="logo-name">ROMAR</p>
+          <p class="logo-slogan">Contigo 24 hrs.</p>
+        </div>
+      </div>
+      <h1>Instalación, venta y reparación de maquinaria para panaderías</h1>
+      <p class="hero__lead">
+        Somos especialistas en hornos, amasadoras, laminadoras y equipos de frío. Brindamos respuestas rápidas,
+        soporte en sitio y repuestos certificados para que tu producción nunca se detenga.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#cotizacion">Solicitar cotización</a>
+        <a class="btn btn--ghost" href="#agenda">Agendar reparación</a>
+      </div>
+      <div class="hero__badges">
+        <span class="badge">Atención 24/7</span>
+        <span class="badge">Instalación certificada</span>
+        <span class="badge">Cobertura nacional</span>
+      </div>
+    </div>
+    <div class="hero__info-card">
+      <h3>Contacto directo</h3>
+      <a class="contact-link" href="tel:+593999999999">📞 +593 99 999 9999</a>
+      <a class="contact-link" href="https://wa.me/593999999999">💬 WhatsApp inmediato</a>
+      <p class="contact-note">O agenda una visita técnica en el formulario.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="servicios">
+      <div class="section__header">
+        <p class="eyebrow">Soluciones integrales</p>
+        <h2>Todo lo que necesitas para tu línea de pan</h2>
+        <p class="section__lead">Desde la instalación y calibración hasta reparaciones de emergencia y planes de mantenimiento preventivo.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Instalación y puesta en marcha</h3>
+          <p>Ajustamos tus máquinas a la capacidad de producción deseada, cumpliendo normas de seguridad y eficiencia energética.</p>
+        </article>
+        <article class="card">
+          <h3>Venta y reposición</h3>
+          <p>Catálogo de hornos rotativos, cámaras de fermentación, divisoras y amasadoras con entrega rápida y asesoría personalizada.</p>
+        </article>
+        <article class="card">
+          <h3>Reparación 24/7</h3>
+          <p>Diagnóstico en sitio, cambio de repuestos originales y seguimiento post-servicio para mantener tu operación sin pausas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--split" id="productos">
+      <div>
+        <p class="eyebrow">Catálogo destacado</p>
+        <h2>Selecciona la maquinaria que necesitas</h2>
+        <p class="section__lead">Agrega equipos a tu lista y envíanos una solicitud de compra o cotización.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product" data-name="Horno rotativo" data-price="6200">
+          <div class="product__head">
+            <h3>Horno rotativo</h3>
+            <span class="pill">110/220V</span>
+          </div>
+          <p>Para alta producción con vapor integrado y control digital de temperatura.</p>
+          <p class="product__price">Desde $6,200</p>
+          <button class="btn btn--secondary add-btn">Agregar</button>
+        </article>
+        <article class="product" data-name="Amasadora espiral" data-price="2800">
+          <div class="product__head">
+            <h3>Amasadora espiral</h3>
+            <span class="pill">80 L</span>
+          </div>
+          <p>Masa homogénea con doble velocidad y protecciones de seguridad.</p>
+          <p class="product__price">Desde $2,800</p>
+          <button class="btn btn--secondary add-btn">Agregar</button>
+        </article>
+        <article class="product" data-name="Cámara de fermentación" data-price="1900">
+          <div class="product__head">
+            <h3>Cámara de fermentación</h3>
+            <span class="pill">Control humedad</span>
+          </div>
+          <p>Fermentación uniforme y programación automática para cargas nocturnas.</p>
+          <p class="product__price">Desde $1,900</p>
+          <button class="btn btn--secondary add-btn">Agregar</button>
+        </article>
+        <article class="product" data-name="Divisora y boleadora" data-price="3500">
+          <div class="product__head">
+            <h3>Divisora y boleadora</h3>
+            <span class="pill">Automática</span>
+          </div>
+          <p>Reduce tiempos de pesado y mejora la uniformidad de tus piezas.</p>
+          <p class="product__price">Desde $3,500</p>
+          <button class="btn btn--secondary add-btn">Agregar</button>
+        </article>
+      </div>
+      <div class="selection" id="cotizacion">
+        <h3>Tu selección</h3>
+        <ul class="selection__list" id="selectionList">
+          <li class="selection__empty">Aún no agregas equipos.</li>
+        </ul>
+        <div class="selection__footer">
+          <div>
+            <p class="selection__label">Total estimado</p>
+            <p class="selection__total" id="selectionTotal">$0</p>
+          </div>
+          <button class="btn btn--primary" id="sendQuote">Enviar cotización</button>
+        </div>
+        <p class="selection__note">Recibirás confirmación y opciones de financiamiento.</p>
+        <div class="selection__status" id="quoteStatus" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section--grid" id="agenda">
+      <div>
+        <p class="eyebrow">Servicio técnico</p>
+        <h2>Agenda un arreglo o visita de diagnóstico</h2>
+        <p class="section__lead">Cuéntanos el problema, selecciona fecha y hora y enviaremos a un especialista.</p>
+        <div class="list">
+          <div class="list__item">Diagnóstico completo de electricidad y gas.</div>
+          <div class="list__item">Chequeo de calibración y limpieza técnica.</div>
+          <div class="list__item">Stock de repuestos más usados en la primera visita.</div>
+        </div>
+      </div>
+      <form class="form" id="serviceForm">
+        <label class="form__group">
+          <span>Nombre de contacto*</span>
+          <input type="text" name="nombre" required placeholder="Ej. Andrea López">
+        </label>
+        <label class="form__group">
+          <span>Teléfono o WhatsApp*</span>
+          <input type="tel" name="telefono" required placeholder="099 999 9999">
+        </label>
+        <label class="form__group">
+          <span>Equipo a revisar*</span>
+          <select name="equipo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Horno rotativo</option>
+            <option>Amasadora</option>
+            <option>Cámara de fermentación</option>
+            <option>Divisora/Boleadora</option>
+            <option>Otro</option>
+          </select>
+        </label>
+        <div class="form__grid">
+          <label class="form__group">
+            <span>Fecha preferida*</span>
+            <input type="date" name="fecha" required>
+          </label>
+          <label class="form__group">
+            <span>Hora*</span>
+            <input type="time" name="hora" required>
+          </label>
+        </div>
+        <label class="form__group">
+          <span>Descripción breve</span>
+          <textarea name="descripcion" rows="3" placeholder="Ej. el horno pierde temperatura o la amasadora hace ruido inusual"></textarea>
+        </label>
+        <button class="btn btn--primary" type="submit">Solicitar visita</button>
+        <p class="form__status" id="serviceStatus" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section section--location" id="ubicacion">
+      <div class="section__header">
+        <p class="eyebrow">Visítanos o agenda online</p>
+        <h2>Ubicación y canales de contacto</h2>
+        <p class="section__lead">Atendemos en planta y de manera remota. Confirma disponibilidad antes de tu visita.</p>
+      </div>
+      <div class="location-grid">
+        <div class="location-card">
+          <h3>Showroom & Taller</h3>
+          <p>Avenida Industrial 123, Zona Comercial</p>
+          <p>Quito, Ecuador</p>
+          <div class="contact-block">
+            <a href="tel:+593999999999">📞 +593 99 999 9999</a>
+            <a href="mailto:ventas@romar.com">✉️ ventas@romar.com</a>
+          </div>
+          <p class="schedule">Lunes a sábado, 8h00 - 19h00</p>
+        </div>
+        <div class="map-card">
+          <iframe title="Ubicación Romar" src="https://www.openstreetmap.org/export/embed.html?bbox=-78.512%2C-0.217%2C-78.502%2C-0.207&amp;layer=mapnik&amp;marker=-0.212%2C-78.507" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <div class="logo-circle small">
+        <span class="circle circle--outer"></span>
+        <span class="circle circle--middle"></span>
+        <span class="circle circle--inner"></span>
+      </div>
+      <div>
+        <p class="logo-name">ROMAR</p>
+        <p class="logo-slogan">Contigo 24 hrs.</p>
+      </div>
+    </div>
+    <div class="footer__links">
+      <a href="#servicios">Servicios</a>
+      <a href="#productos">Venta</a>
+      <a href="#agenda">Reparación</a>
+      <a href="#ubicacion">Ubicación</a>
+    </div>
+    <p class="footer__copy">Respuesta rápida, cobertura nacional y técnicos certificados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
